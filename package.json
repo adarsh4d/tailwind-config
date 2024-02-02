@@ -1,6 +1,6 @@
 {
   "name": "@adarshdk/tailwind-config",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Default tailwind config",
   "main": "index.js",
   "scripts": {
