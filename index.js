@@ -52,16 +52,5 @@ export default {
     plugin(function ({ addVariant }) {
       addVariant("icon", "& .icon")
     }),
-    plugin(function ({ matchUtilities, theme }) {
-      matchUtilities(
-        {
-          sz: (value) => ({
-            height: value,
-            width: value,
-          }),
-        },
-        { values: theme("spacing") }
-      )
-    }),
   ],
 }
