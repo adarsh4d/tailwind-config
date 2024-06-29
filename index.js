@@ -26,7 +26,6 @@ export default {
         "2xl": "1400px",
       },
     },
-    extend: {},
   },
   plugins: [
     plugin(function ({ addUtilities }) {
@@ -38,11 +37,6 @@ export default {
         ".place-between": {
           "align-items": "center",
           "justify-content": "space-between",
-        },
-        ".truncate ": {
-          "text-overflow": "ellipsis",
-          overflow: "hidden",
-          "white-space": "nowrap",
         },
       })
     }),

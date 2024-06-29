@@ -1,6 +1,21 @@
-# tailwind config
+# Tailwind config
 
-## Compactible version
+## Install
+
+```bash
+npm i @adarshdk/tailwind-config
+```
+
+## Usage
+
+```js
+// tailwind.config.js
+module.exports = {
+  presets: [require("@adarshdk/tailwind-config")],
+}
+```
+
+## Compatible version
 
 | Tailwind | Config |
 | -------- | ------ |
