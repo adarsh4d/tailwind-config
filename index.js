@@ -29,16 +29,29 @@ export default {
   },
   plugins: [
     plugin(function ({ addUtilities }) {
-      addUtilities({
-        ".place-center": {
-          "align-items": "center",
-          "justify-content": "center",
+      addUtilities(
+        {
+          ".place-center": {
+            "align-items": "center",
+            "justify-content": "center",
+          },
+          ".place-between": {
+            "align-items": "center",
+            "justify-content": "space-between",
+          },
+          ".scrollbar-hide": {
+            "-ms-overflow-style": "none",
+            "scrollbar-width": "none",
+            "&::-webkit-scrollbar": { display: "none" },
+          },
+          ".scrollbar-default": {
+            "-ms-overflow-style": "auto",
+            "scrollbar-width": "auto",
+            "&::-webkit-scrollbar": { display: "block" },
+          },
         },
-        ".place-between": {
-          "align-items": "center",
-          "justify-content": "space-between",
-        },
-      })
+        ["responsive"]
+      )
     }),
     plugin(function ({ addVariant }) {
       addVariant("link", "& a")
